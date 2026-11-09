@@ -1,0 +1,48 @@
+{
+  "name": "chess-backend",
+  "version": "1.0.0",
+  "description": "Chess Game Backend — Auth + Leaderboard + Multiplayer",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --config jest.unit.config.js --coverage",
+    "migrate": "node Database/migrations/run.js",
+    "test:integration": "jest --config jest.integration.config.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1137.0",
+    "@socket.io/redis-adapter": "8.3.0",
+    "bcryptjs": "2.4.3",
+    "chess.js": "1.4.0",
+    "cookie": "1.1.1",
+    "cookie-parser": "1.4.7",
+    "cors": "2.8.6",
+    "dotenv": "16.6.1",
+    "express": "4.22.3",
+    "express-rate-limit": "7.5.1",
+    "express-validator": "7.3.2",
+    "helmet": "7.2.0",
+    "ioredis": "6.0.0",
+    "jsonwebtoken": "9.0.3",
+    "morgan": "1.12.1",
+    "multer": "2.4.0",
+    "nodemailer": "10.0.10",
+    "pg": "8.23.0",
+    "rate-limit-redis": "4.3.1",
+    "sharp": "0.35.4",
+    "socket.io": "4.8.3",
+    "socket.io-client": "4.8.3",
+    "winston": "3.19.0"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "nodemon": "3.1.14",
+    "smtp-server": "3.19.13",
+    "socket.io-client": "4.8.3",
+    "supertest": "7.2.2"
+  }
+}
